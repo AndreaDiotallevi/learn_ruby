@@ -15,5 +15,5 @@ def translate(string)
         word[i..word.length-1] + word[0..i-1] + "ay"
     end
 }
-return words.join(" ")
+words.join(" ")
 end

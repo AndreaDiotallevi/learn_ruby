@@ -1,5 +1,4 @@
 class Book
-
     attr_accessor :title
 
     def title
@@ -10,6 +9,7 @@ class Book
                 word.capitalize
             end
     }
-    return words.join(" ")
+    @title = words.join(" ")
     end
+
 end

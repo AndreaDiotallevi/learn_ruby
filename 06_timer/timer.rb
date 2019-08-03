@@ -1,5 +1,4 @@
 class Timer
-
   attr_accessor :seconds
 
   def initialize
@@ -7,9 +6,9 @@ class Timer
   end
 
   def time_string
-    hour = seconds / 3600
-    min = seconds % 3600 / 60
-    sec = seconds % 60
+    hour = @seconds / 3600
+    min = @seconds % 3600 / 60
+    sec = @seconds % 60
     sprintf("%02d:%02d:%02d", hour, min, sec)
   end
 
